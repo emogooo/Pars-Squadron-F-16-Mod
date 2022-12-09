@@ -6,7 +6,7 @@ class CfgPatches
 {
 	class ParsFiloPaketi
 	{
-		units[] = {"F16C_976016", "F16C_973858", "F16D_971453"};
+		units[] = {"F16C_976016", "F16C_971905","F16C_971071", "F16C_973858", "F16C_971101", "F16D_971453"};
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"FIR_AirWeaponSystem_US", "FIR_F16_F", "FIR_PilotCrewPack_US"};
@@ -94,11 +94,95 @@ class CfgVehicles
 	class F16C_973858 : FIR_F16C_new
 	{
 		scope = public;
-		author = "Emogo";
+		author = "Efe Ceylan";
 		dlc    = "F-16 Pars Filo";
 		displayName = "F-16C 97-3858";
 		fir_f16_custom_skin = 0;		
 		hiddenselectionstextures[] = {"F16_Pars_Filo\data\body\97_3858.paa","F16_Pars_Filo\data\wing_co.paa","F16_Pars_Filo\data\tail\97_3858.paa","F16_Pars_Filo\data\CFT_181_co.paa",""};
+		fir_f16_engine = "GE";
+		fir_f16_aux = "iff";
+		fir_f16_hud = "std";		
+		fir_f16_vwt = "dragchute"; 
+		fir_f16_cft = "yes";			
+		editorPreview = "\F16_Pars_Filo\ico\F16CPLUS.jpg"; 
+		faction 	= "ParsFilo";
+		class Attributes {};
+		class Components: Components
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				class Presets 
+				{
+									
+				};			
+			};
+		};
+	};
+
+	class F16C_971101 : FIR_F16C_new
+	{
+		scope = public;
+		author = "Tolga Akarca";
+		dlc    = "F-16 Pars Filo";
+		displayName = "F-16C 97-1101";
+		fir_f16_custom_skin = 0;		
+		hiddenselectionstextures[] = {"F16_Pars_Filo\data\body\97_1101.paa","F16_Pars_Filo\data\wing_co.paa","F16_Pars_Filo\data\tail\97_1101.paa","F16_Pars_Filo\data\CFT_181_co.paa",""};
+		fir_f16_engine = "GE";
+		fir_f16_aux = "iff";
+		fir_f16_hud = "std";		
+		fir_f16_vwt = "dragchute"; 
+		fir_f16_cft = "yes";			
+		editorPreview = "\F16_Pars_Filo\ico\F16CPLUS.jpg"; 
+		faction 	= "ParsFilo";
+		class Attributes {};
+		class Components: Components
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				class Presets 
+				{
+									
+				};			
+			};
+		};
+	};
+
+	class F16C_971905 : FIR_F16C_new
+	{
+		scope = public;
+		author = "Umut Bardakci";
+		dlc    = "F-16 Pars Filo";
+		displayName = "F-16C 97-1905";
+		fir_f16_custom_skin = 0;		
+		hiddenselectionstextures[] = {"F16_Pars_Filo\data\body\97_1905.paa","F16_Pars_Filo\data\wing_co.paa","F16_Pars_Filo\data\tail\97_1905.paa","F16_Pars_Filo\data\CFT_181_co.paa",""};
+		fir_f16_engine = "GE";
+		fir_f16_aux = "iff";
+		fir_f16_hud = "std";		
+		fir_f16_vwt = "dragchute"; 
+		fir_f16_cft = "yes";			
+		editorPreview = "\F16_Pars_Filo\ico\F16CPLUS.jpg"; 
+		faction 	= "ParsFilo";
+		class Attributes {};
+		class Components: Components
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				class Presets 
+				{
+									
+				};			
+			};
+		};
+	};
+
+	class F16C_971071 : FIR_F16C_new
+	{
+		scope = public;
+		author = "Gorkem Coskun";
+		dlc    = "F-16 Pars Filo";
+		displayName = "F-16C 97-1071";
+		fir_f16_custom_skin = 0;		
+		hiddenselectionstextures[] = {"F16_Pars_Filo\data\body\97_1071.paa","F16_Pars_Filo\data\wing_co.paa","F16_Pars_Filo\data\tail\97_1071.paa","F16_Pars_Filo\data\CFT_181_co.paa",""};
 		fir_f16_engine = "GE";
 		fir_f16_aux = "iff";
 		fir_f16_hud = "std";		
